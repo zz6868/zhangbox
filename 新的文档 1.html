@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="张振">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>个人音乐网站</title>
+  <style type="text/css">
+              *{padding:0px;
+			    margin:0px;
+				}
+          .body{font-family:"微软雅黑";
+		        font-size:14px;
+				color:#666;
+				}
+            .mu{width:100%;
+			    height:600px;
+				}
+       .mu .box{width:980px;
+	            margin:0px auto;
+				height:100%;
+				}
+  .mu .box .b_l{width:280px;
+                height:100%;
+				float:left;
+				background:#f2f2f2;
+				}
+  .mu .box .b_r{width:700px;
+                height:100%;
+				float:left;
+				}
+.mu .box 
+.b_l .image img{padding:10px;
+                }
+.mu .box .b_l p{font-size:12px;
+                line-height:26px;
+				}
+         .mu h1{height:50px;
+			    width:100%;
+				margin-top:10px;
+				text-align:center;
+				line-height:46px;
+				}
+   .mu .header {width:980px;
+                height:50px;
+				margin:0px auto;
+				margin-bottom:3px;
+				}
+          .mu p{font-size:20px;
+		        width:700px;
+				height:30px;
+				line-height:25px;
+				}
+         .mu ul{margin-top:20px;
+		        }
+              .mu ul li{list-style:none;
+			            margin-left:10px;
+						height:32px;
+						margin-top:2px;
+						line-height:32px;
+						border-bottom:1px solid #f9f9f9;
+						}
+  .mu ul li .num{width:60px;
+                 display:inline-block;
+				 } 
+ .mu ul li .name{width:360px;
+                 display:inline-block;
+				 }
+ .mu ul li .button{width:100px;
+                   display:inline-block;
+				   }
+                 a{text-decoration:none;
+				 }
+  </style>
+ </head>
+ <body>
+ 
+<div class="mu">
+    <div class="header">
+	<img src="image/3.gif"width="980"height="50">
+	</div>
+     <div class="box">
+	      <div class="b_l">
+		       <div class="image"><img src="image/2.jpg"width="260" height="100">
+			   <p>作者：</p>
+			   <p>韩流、华语、king-pop</p>
+			   <p>流行、新歌</p>
+		       </div>
+		  </div>
+          <div class="b_r">
+		      <h1>welcome to my personal music website</h1>
+			  <p>the list of my music:</p>
+			  <span id="timer">00:00</span> /
+			  <span id="ctimer">00:00</span>
+           <ul>
+		       <li>
+		           <span class="num">001.</span>
+		           <span class="name">陈奕迅 - 爱情转移.mp3</span>
+		           <span class="button">
+				   <a href="#"onclick="mu_play('image/陈奕迅 - 爱情转移.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+		       <li>
+		           <span class="num">002.</span>
+		           <span class="name">冷漠 - 伤心城市 - 慢四版.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/冷漠 - 伤心城市 - 慢四版.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+		       </li>
+		       <li>
+		           <span class="num">003.</span>
+		           <span class="name">冷漠、张冬玲 - 我在红尘中遇见你.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/冷漠、张冬玲 - 我在红尘中遇见你.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+		       </li>
+		       <li>
+				   <span class="num">004.</span>
+				   <span class="name">李春波 - 小芳.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/李春波 - 小芳.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+		       <li>
+                   <span class="num">005.</span>
+				   <span class="name">水木年华 - 一生有你.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/水木年华 - 一生有你.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+		       <li>
+			       <span class="num">006.</span>
+			       <span class="name">水木年华 - 在他乡.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/水木年华 - 在他乡.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+               <li>
+			       <span class="num">007.</span>
+			       <span class="name">五月 - 缘分.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/五月 - 缘分.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+               <li>
+			       <span class="num">008.</span>
+			       <span class="name">张雨生 - 天天想你.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/张雨生 - 天天想你.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+               <li>
+			       <span class="num">009.</span>
+			       <span class="name">冷漠 - 没有你陪伴我真的好孤单.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/冷漠 - 没有你陪伴我真的好孤单.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+               <li>
+			       <span class="num">010.</span>
+			       <span class="name">李佳璐 - 无法原谅.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/李佳璐 - 无法原谅.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+               <li>
+			       <span class="num">011.</span>
+			       <span class="name">郑源 - 忘不掉的伤.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/郑源 - 忘不掉的伤.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+			   <li>
+			       <span class="num">012.</span>
+			       <span class="name">杜雯媞 - 雪.mp3</span>
+				   <span class="button">
+				   <a href="#"onclick="mu_play('image/杜雯媞 - 雪.mp3')" Id="play">播放</a>
+				   <a href="#"onclick="mu_stop()" Id="stop"style="display:none">暂停</a>
+				   
+				   </span>
+			   </li>
+		   </ul>
+
+		  </div>
+	  </div>
+</div> 
+<!--start js-->
+<script type="text/javascript" >
+//创建音乐播放器
+var audiodom =document.createElement("audio");
+
+//audiodom.volume=0.2；
+//实现播放暂停----开始
+	
+			function mu_play(src){
+			audiodom.src=src;
+			audiodom.play();
+
+			document.getElementById("stop").style.display="block";
+			document.getElementById("play").style.display="none";
+			};
+			
+	
+	
+	
+			function mu_stop(src){
+			audiodom.src=src;
+			audiodom.pause();
+			document.getElementById("play").style.display="block";
+			document.getElementById("stop").style.display="none";
+
+			};
+			
+	
+//实现播放暂停----结束
+
+audiodom.oncanplaythrough=function(){
+
+var timer= this.duration;
+var ms= parseInt(timer/60);
+var ss= parseInt(timer%60);
+//consle.log("======当前音乐的总时长是:"(+ms+":"+ss));
+document.getElementById("timer").innerHTML = (ms+":"+ss);
+
+};
+audiodom.addEventListener("timeupdate",function(){
+var ctimer= this.currentTime;
+//consle.log(ctimer);
+var ms= parseInt(ctimer/60);
+var ss= parseInt(ctimer%60);
+//consle.log.log("======当前音乐的总时长是:"(+ms+":"+ss));
+document.getElementById("ctimer").innerHTML = (ms+":"+ss);
+
+
+
+},false);
+
+
+</script>
+<!--end js-->
+
+ </body>
+</html>
